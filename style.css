@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+section#entradas {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}

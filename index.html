@@ -1,32 +1,53 @@
-<html>
-	<head>
-	<title>
-	Aula de CSW
-	</title>
-	
-	</head>
-		<body>
-		
-		<h1>Este e um cabecalho</h1>
-		<h2>Este e um cabecalho</h2>
-		<h3>Este e um cabecalho</h3>
-		<h4>Este e um cabecalho</h4>
-		<h5>Este e um cabecalho</h5>
-		<h6>Este e um cabecalho</h6>
-		
-		<p>Isto e um paragrafo</p>
-		
-		<button onClick = "Cliquei()" type "button">Clique Me!</button>
-		
-		<script>
-		function Cliquei(){
-		alert('Cliquei!');
-		}
-		</script>
-		
-	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="entradas">
+
+        <label for="textoInput">Nome do aluno: </label>
+        <input type="text" id="textoInput1" name="textoInput">
+        <br>
+        <label for="textoInput">Nota do 1º bimestre: </label>
+        <input type="text" id="textoInput2" name="textoInput">
+        <br>
+        <label for="textoInput">Nota do 2º bimestre: </label>
+        <input type="text" id="textoInput3" name="textoInput">
+        <br>
+        <label for="textoInput">Total de horas da disciplina: </label>
+        <input type="text" id="textoInput4" name="textoInput">
+        <br>
+        <label for="textoInput">Total de faltas que você possui: </label>
+        <input type="text" id="textoInput5" name="textoInput">
+
+        <br>
+        <br>
+
+        <button onclick="verificarAprovacao()">Verificar e Inserir</button>
 
 
+    </section>
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <table border="1">
+            <tr>
+                <th>Nome do Aluno</th>
+                <th>Nota 1º Bimestre</th>
+                <th>Nota 2º Bimestre</th>
+                <th>Total de Horas</th>
+                <th>Total de Faltas</th>
+                <th>Resultado</th>
+            </tr>
+            <!-- Linha para os resultados -->
+        </table>
+    </section>
+</body>
 
-		</body>
 </html>
